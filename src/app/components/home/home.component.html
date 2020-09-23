@@ -2,7 +2,7 @@
   <div class="card" *ngFor="let itemSong of newSongs">
     <img
       class="card-img-top"
-      [src]="itemSong.images[0].url"
+      [src]="itemSong.images | noimage"
       alt="Card image cap"
     />
     <div class="card-body">
