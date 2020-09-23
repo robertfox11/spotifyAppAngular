@@ -7,12 +7,12 @@ import { SpotyfiService } from '../../services/spotyfi.service';
 })
 export class HomeComponent implements OnInit {
   newSongs: any[] = [];
-  constructor(private spotifyService: SpotyfiService) {
+  constructor(private spotifyService: SpotyfiService) {}
+
+  ngOnInit(): void {
     this.spotifyService.getNewRealese().subscribe((data: any) => {
-      console.log(data.albums.items);
-      this.newSongs = data.albums.items;
+      console.log(data);
+      this.newSongs = data;
     });
   }
-
-  ngOnInit(): void {}
 }

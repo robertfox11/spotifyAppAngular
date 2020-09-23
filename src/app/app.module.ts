@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 //service
 import { SpotyfiService } from './services/spotyfi.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ArtistaComponent,
     NavbarComponent,
+    NoimagePipe,
   ],
   imports: [
     BrowserModule,
