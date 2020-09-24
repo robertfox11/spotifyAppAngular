@@ -5,6 +5,6 @@ import { Routes } from '@angular/router';
 export const ROUTES: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'artistas', component: ArtistaComponent },
+  { path: 'artist/:id', component: ArtistaComponent },
   { path: 'search', component: SearchComponent },
 ];
